@@ -2,9 +2,7 @@ package com.example.meusgatos.domain.model;
 
 import java.util.Date;
 import java.util.List;
-
 import org.hibernate.annotations.ManyToAny;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +10,7 @@ import jakarta.persistence.GenerationType;
 public class Produto {
    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idProduto")
+    @Column(name = "oid_produto")
     private String id;
 
     private String nome;
