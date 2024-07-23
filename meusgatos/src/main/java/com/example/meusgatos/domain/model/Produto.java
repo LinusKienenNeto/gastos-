@@ -10,8 +10,8 @@ import jakarta.persistence.GenerationType;
 public class Produto {
    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "oid_produto")
-    private String id;
+    @Column(name = "oid_produto", nullable = false)
+    private Long id;
 
     private String nome;
 
@@ -22,11 +22,11 @@ public class Produto {
 
     private Date dataCadastro;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
