@@ -4,22 +4,27 @@ import java.util.Date;
 import java.util.List;
 import org.hibernate.annotations.ManyToAny;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
+@Entity
 public class Produto {
    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "oid_produto", nullable = false)
     private Long id;
 
+    @Column(name = "nome_produto", nullable = false)
     private String nome;
 
+    @Column(name = "descricao_produto", nullable = true)
     private String descricao;
 
     @ManyToAny
     private List<Usuario> usuario;
 
+    @Column(name = "dt_cadastro", nullable = false)
     private Date dataCadastro;
 
     public Long getId() {

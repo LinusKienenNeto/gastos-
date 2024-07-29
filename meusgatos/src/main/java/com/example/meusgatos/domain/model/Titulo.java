@@ -2,14 +2,25 @@ package com.example.meusgatos.domain.model;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+@Entity
 public class Titulo {
 
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "idTitulo", nullable = false )
     private String id;
 
+    @Column(name = "nome_Titulo", nullable = false)
     private String nome;
 
+    @Column(name = "descricao_titulo", nullable = true)
     private String descricao;
 
+    @Column(name = "dt_cadastro", nullable = false)
     private Date dataCadastro;
 
     private Date dataDesativacao;
