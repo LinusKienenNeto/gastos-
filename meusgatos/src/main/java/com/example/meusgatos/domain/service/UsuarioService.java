@@ -25,7 +25,7 @@ public class UsuarioService implements ICRUDService<UsuarioRequestDto, UsuarioRe
         
         List<Usuario> usuarios = usuarioRepository.findAll();
 
-        List<usuarioRepository> usuariosDto = new ArrayList<>();
+        List<UsuarioRepository> usuarioDto = new ArrayList<>();
     }
 
     @Override

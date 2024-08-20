@@ -2,6 +2,7 @@ package com.example.meusgatos.dto.usuario;
 
 import java.util.Date;
 
+//aqui eu monto a response da API
 public class UsuarioResponseDto {
     
     private Long id;

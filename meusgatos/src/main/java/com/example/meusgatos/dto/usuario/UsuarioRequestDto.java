@@ -1,5 +1,7 @@
 package com.example.meusgatos.dto.usuario;
 
+
+//Aqui eu monto a minha request da API
 public class UsuarioRequestDto {
     
     private String nome;
