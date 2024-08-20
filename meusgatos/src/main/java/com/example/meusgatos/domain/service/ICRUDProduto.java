@@ -8,7 +8,7 @@ public interface ICRUDProduto<Req, Res> {
 
     Res obterPorId(Long id);
 
-    Res cadastrar(Req id, Req dto);
+    Res cadastrar(Long id, Req dto);
 
     void deletar(Long id);
     
